@@ -17,6 +17,7 @@ import { withDraw } from '@plait/draw';
 import { MindThemeColors, withMind } from '@plait/mind';
 import MobileDetect from 'mobile-detect';
 import { withMindExtend } from './plugins/with-mind-extend';
+import { withMindKeyboard } from './plugins/with-mind-keyboard';
 import { withCommonPlugin } from './plugins/with-common';
 import { CreationToolbar } from './components/toolbar/creation-toolbar';
 import { ZoomToolbar } from './components/toolbar/zoom-toolbar';
@@ -202,6 +203,7 @@ export const Drawnix: React.FC<DrawnixProps> = ({
     withGroup,
     withMind,
     withMindExtend,
+    withMindKeyboard,
     withCommonPlugin,
     buildDrawnixHotkeyPlugin(updateAppState),
     withFreehand,
